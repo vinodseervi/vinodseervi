@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: monospace;
+    background: url("../bc1.jpg")  no-repeat; 
+    background-size:cover;
+    height: calic(100vh - 80px);
+   
+}
+nav{
+    background-color: #000000;
+    height: 80px;
+    width: 100%;
+    opacity: .9;
+}
+label.navbar{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+nav ul li a{
+    color: rgb(255, 11, 11);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background-color: #852020;
+    transition: .1s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: wheat;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+     display:none;
+}
+@media (max-width: 952px){
+    label.navbar{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+}
+@media (max-width: 1050px){
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+        color: aqua;
+        top: 80px;
+        left: -100%;
+        transition: all .5s;
+        text-align: center;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    a:hover,a.active{
+        background :rgb(105, 22, 22);
+        color: #ff0000;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 12px;
+
+}
+.center{
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+
+/* social logo  */
+.social{
+   color: aqua;
+}
+
+
+.logo{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+a{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(18, 18, 34);
+    border-radius: 50px;
+    text-align: center;
+    margin: 10px;
+    line-height: 80px;
+    box-shadow: 1px 4px 2px 2px rgb(84, 84, 105);
+}
+a i{
+    transition: all .1s linear;
+}
+a:hover i{
+    transform: scale(1.6);
+}
+.fa-instagram{
+    color: #f52d6f;
+}
+.fa-youtube-play{
+    color: #f70303;
+}
+.fa-github{
+    color: rgb(117, 59, 172);
+}
+.fa-linkedin{
+    color: #0097e6;
+}
+.fa-facebook{
+    color: rgb(86, 86, 204);
+}
+

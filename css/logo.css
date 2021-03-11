@@ -1,0 +1,38 @@
+.logo{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+a{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(230, 230, 243);
+    border-radius: 50px;
+    text-align: center;
+    margin: 10px;
+    line-height: 80px;
+    box-shadow: 1px 4px 2px 2px rgb(84, 84, 105);
+}
+a i{
+    transition: all .1s linear;
+}
+a:hover i{
+    transform: scale(1.6);
+}
+.fa-instagram{
+    color: #ee1f64;
+}
+.fa-youtube-play{
+    color: #e84118;
+}
+.fa-github{
+    color: rgb(65, 25, 102);
+}
+.fa-linkedin{
+    color: #0097e6;
+}
+.fa-facebook{
+    color: rgb(86, 86, 204);
+}
+

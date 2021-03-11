@@ -1,0 +1,56 @@
+body{
+	background-image: url(bcontact.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+	justify-content: center;
+}
+.contact{
+    margin-top: 100px;
+    color: white;
+	text-align: center;
+	justify-content: center;
+}
+.contact h1{
+    font-size: 50px;
+    line-height: 10px;
+}
+.contact h3{
+    font-size: 16px;
+}
+form{
+    margin-top: 50px;
+}
+.form-control{
+    width: 600px;
+    background: transparent;
+    border:none;
+    outline: none;
+    border-bottom:1px solid rebeccapurple;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+input{
+    height: 45px;
+}
+form .submit{
+    background-color: rgb(22, 22, 180);
+    color: rgb(26,14,48);
+    border-color: transparent;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    height: 50px;
+    margin-top: 20px;
+    transition: .5s ease;
+    
+}
+  form .submit:hover{
+    background-color: #380f0c;
+/*     margin: 100px;*/
+    color: rgb(224,52,52);
+    cursor: pointer;
+}

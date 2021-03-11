@@ -1,0 +1,52 @@
+body{
+	background-image: url(bc1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+h1{
+	color: rgb(211, 125, 125);
+	font-size: 50px;
+	text-align: center;
+	justify-content: center;
+}
+#services{
+        margin: 20px;
+        display: flex;
+	    justify-content: center;
+	    text-align: center;
+    }
+    #services .box{
+        border: 2px solid rgb(61, 12, 12);
+        padding: 15px;
+        margin: 10px 1px;
+        border-radius: 25px;
+        background-color:rgb(45, 50, 51);
+    }
+    #services .box img{
+        height: 250px;
+        margin: auto;
+		border-radius: 7px;
+        display: block;
+    }
+
+.content{
+	background: rgb(19, 70, 70);
+	width: 70%;
+	border-radius: 20px;
+	padding: 40px;
+	margin: 100px auto;
+}
+p{
+	font-size: 25px;
+	color: rgb(0,0,0);
+}
+footer{
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background: black;
+    text-align: center;
+    color: wheat;
+    font-family: arial;
+    letter-spacing: 1px;
+}
