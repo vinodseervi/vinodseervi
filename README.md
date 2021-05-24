@@ -1,7 +1,15 @@
-### Hi I'm Vinod Seervi 👋
+<h1 align="center">Hi, I'm Vinod Seervi  <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px"></h1>
+<h3 align="center">A Girl trying to Figure-Out Stuff!!</h3>
 
+- 🌱 I’m currently learning *C++* 
 
-🌱 I’m currently learning C++ 
+- 📫 How to reach me **vinodseervi0124@gmail.com*
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://www.linkedin.com/in/vinod-seervi-72b890200/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="chetas shree .m" height="30" width="40" /></a>
+<a href="https://www.instagram.com/_vinodseervi/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="chetasshree_creations" height="30" width="40" /></a>
+</p>
 
 <h3 align="left">Languages and Tools:</h3>
 
