@@ -1,5 +1,4 @@
 <h1 align="center">Hi, I'm Vinod Seervi  <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px"></h1>
-<h3 align="center">A Girl trying to Figure-Out Stuff!!</h3>
 
 - 🌱 I’m currently learning *C++* 
 
