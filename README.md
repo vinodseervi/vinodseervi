@@ -6,7 +6,7 @@
 
 ## 🙋‍♂️ About Me
 
-- 🔭 I’m currently working on **C++ language**
+- 🔭 I’m currently working on **Java language**
 
 - 🌱 I’m currently learning **Data Structure**
 
