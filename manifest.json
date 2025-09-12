@@ -1,0 +1,27 @@
+{
+    "name": "Vinod Seervi - Portfolio",
+    "short_name": "Vinod Seervi",
+    "description": "Full Stack Developer & Tech Enthusiast - Computer Science Student at SRM-IST",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0a0a",
+    "theme_color": "#6366f1",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "./About Me/pic3.jpg",
+            "sizes": "192x192",
+            "type": "image/jpeg",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "./About Me/pic3.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": ["portfolio", "developer", "technology"],
+    "lang": "en",
+    "dir": "ltr"
+}

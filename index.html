@@ -1,59 +1,791 @@
 <!DOCTYPE html>
-<!-- <html lang="en"> -->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
-    <title>Vinod Seervi</title>
+    <title>Vinod Seervi - Software Development Engineer at S&P Global</title>
+    <meta name="description" content="Vinod Seervi - SDE 1 at S&P Global, B.Tech IT from SRM-IST, React Developer, Spring Boot Expert, AWS Certified, and Travel Enthusiast from Jodhpur">
+    <meta name="keywords" content="Vinod Seervi, SDE, S&P Global, React Developer, Spring Boot, AWS, B.Tech IT, SRM-IST, Java, Microservices, Jodhpur, Rajasthan">
     
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/modern-styles.css">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Vinod Seervi">
 </head>
 <body>
-    <nav #nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="navbar">Vinod Seervi</label>
-        <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="About Me/About.html">About Me</a></li>
-            <li><a href=https://drive.google.com/drive/folders/1_ZBYJkwYP9Y672Hw65MyL7piLnc6N5La?usp=sharing">certificate</a></li>
-            <li><a href="https://github.com/vinodseervi">Work</a></li>
-            <li><a href="box/box.html">Trips</a></li>
-            <li><a href="contact/contact.html">Contact</a></li>
-        </ul>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="loading-text">Loading Portfolio...</div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">VS</span>
+                <span class="logo-name">Vinod Seervi</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#travel" class="nav-link">Travel</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </nav>
 
-    <!-- social logo  -->
-    
-    <div class="logo">
-        <h1 class="social">Follow ME</h1>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+            </div>
+        </div>
         
-        <a href="https://www.facebook.com/vinod.seervi.94402/" target="_blank">
-            <i class="fa fa-2x fa-facebook"></i>
-        </a>
-        <a href="https://www.youtube.com/channel/UCuMvYdNLUhJSVxDIF-CXkgw" target="_blank">
-            <i class="fa fa-2x fa-youtube-play"></i>
-        </a>
-        <a href="https://github.com/vinodseervi" target="_blank">
-            <i class="fa fa-2x fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/vinod-seervi-72b890200/" target="_blank">
-            <i class="fa fa-2x fa-linkedin"></i>
-        </a>
-        <a href="https://www.instagram.com/_vinodseervi/" target="_blank">
-            <i class="fa fa-2x fa-instagram"></i>
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title">
+                    <span class="title-line">Hi, I'm</span>
+                    <span class="title-name">Vinod Seervi</span>
+                    <span class="title-role">Software Development Engineer at S&P Global</span>
+                </h1>
+                <p class="hero-description">
+                    SDE 1 at S&P Global | B.Tech IT from SRM-IST | React & Spring Boot Developer | 
+                    AWS Certified | Microservices & GraphQL Expert | Travel Enthusiast from Jodhpur
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right" data-aos-duration="800">
+                    <div class="about-card">
+                        <h3>Who I Am</h3>
+                        <p>
+                            I'm a Software Development Engineer at S&P Global, where I build and maintain Micro Frontend 
+                            React applications for Capital IQ under the Market Intelligence division. I specialize in 
+                            React, Spring Boot, AWS, and GraphQL, with hands-on experience in microservices architecture 
+                            and cloud-native development.
+                        </p>
+                        <p>
+                            With a B.Tech in Information Technology from SRM-IST and multiple certifications including 
+                            AWS and Red Hat, I'm passionate about creating scalable, high-performance applications. 
+                            My journey spans from Samsung Prism R&D to S&P Global, focusing on modern web technologies 
+                            and cloud solutions.
+                        </p>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="stat-number">1+</div>
+                            <div class="stat-label">Years S&P Global</div>
+                        </div>
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Certifications</div>
+                        </div>
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="stat-number">8.68</div>
+                            <div class="stat-label">CGPA</div>
+                        </div>
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Innovation</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image" data-aos="fade-left" data-aos-duration="800">
+                    <div class="image-card">
+                        <img src="./About Me/pic3.jpg" alt="Vinod Seervi" class="about-img">
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <h4>Vinod Seervi</h4>
+                                <p>Software Development Engineer</p>
+                                <p>S&P Global, Hyderabad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">What I work with</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Frontend Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>Emotion CSS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Backend Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Spring Security</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>Hibernate</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Apache Airflow</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Microservices</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>GraphQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Tools & Databases</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tools"></i>
+                            <span>Maven</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Swagger</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Razorpay</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="./img/bc1.jpg" alt="Personal Portfolio">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/vinodseervi" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Multi-Vendor Platform</h3>
+                        <p>Developed a comprehensive E-Commerce platform using Spring Boot REST APIs and Angular. Implemented Spring Security, MySQL database optimization, and Razorpay payment integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Razorpay</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="./img/bc img2.jpg" alt="Web Development Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/vinodseervi" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Micro Frontend React Applications</h3>
+                        <p>Built and maintained multiple Micro Frontend React applications for Capital IQ at S&P Global, enabling modular and scalable UI development with GraphQL integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">Micro Frontend</span>
+                            <span class="tech-tag">Capital IQ</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="./About Me/bc1.jpg" alt="Data Analysis Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/vinodseervi" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AWS Data Pipeline with Apache Airflow</h3>
+                        <p>Led the design and implementation of a scalable AWS-based data pipeline using Apache Airflow to schedule ETL jobs every 10 minutes, resulting in faster and more reliable data processing.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Apache Airflow</span>
+                            <span class="tech-tag">ETL</span>
+                            <span class="tech-tag">Data Pipeline</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-cta" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://github.com/vinodseervi" class="btn btn-primary">
+                    <span>View All Projects</span>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Experience & Education</h2>
+                <p class="section-subtitle">My journey so far</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">July 2024 - Present</div>
+                        <h3>SDE 1</h3>
+                        <h4>S&P Global, Hyderabad</h4>
+                        <p>Building and maintaining multiple Micro Frontend React applications for Capital IQ under Market Intelligence division. Integrating complex GraphQL APIs and collaborating cross-functionally with development teams.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">GraphQL</span>
+                            <span class="tag">Micro Frontend</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2024 - June 2024</div>
+                        <h3>SDE Intern</h3>
+                        <h4>S&P Global, Hyderabad</h4>
+                        <p>Migrated large-scale React application from UCT to Emotion CSS, improving styling performance. Led AWS-based data pipeline implementation using Apache Airflow for ETL jobs.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">React Migration</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Apache Airflow</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2023 - Aug 2023</div>
+                        <h3>Research & Development Intern</h3>
+                        <h4>Samsung Prism, Bangalore</h4>
+                        <p>Led migration of GPRS Test Automation Framework from TCL to Python. Enhanced logging and reporting mechanisms, created Python-based test scripts for GPRS testing.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Test Automation</span>
+                            <span class="tag">GPRS Testing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2024</div>
+                        <h3>B.Tech in Information Technology</h3>
+                        <h4>SRM Institute of Science and Technology, Chennai</h4>
+                        <p>Completed Bachelor of Technology in Information Technology with specialization. Achieved CGPA of 8.68. Focused on software development, data structures, algorithms, and modern web technologies.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Information Technology</span>
+                            <span class="tag">CGPA: 8.68</span>
+                            <span class="tag">Software Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Education & Certifications</h2>
+                <p class="section-subtitle">Academic achievements and professional certifications</p>
+            </div>
+            
+            <div class="education-content">
+                <div class="education-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-details">
+                            <h3>B.Tech in Information Technology</h3>
+                            <h4>SRM Institute of Science and Technology, Chennai</h4>
+                            <p class="education-year">2024</p>
+                            <p class="education-cgpa">CGPA: 8.68</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="certifications-grid">
+                    <div class="cert-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="cert-logo">
+                            <img src="data:image/png;base64,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" alt="Spring Logo" class="cert-logo-img">
+                        </div>
+                        <div class="cert-details">
+                            <h4>AI for Everyone</h4>
+                            <p>S&P Global • 2024</p>
+                            <a href="https://badges.spglobal.com/b7babbf8-201e-426e-bd8c-3c20b9d964ba" target="_blank" class="cert-link">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="cert-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="cert-logo">
+                            <img src="data:image/png;base64,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" alt="Spring Logo" class="cert-logo-img">
+                        </div>
+                        <div class="cert-details">
+                            <h4>Certified InnerSource Professional</h4>
+                            <p>S&P Global • 2025</p>
+                            <a href="https://badges.spglobal.com/8a464dc9-e615-4aaa-af75-e779f11a7375" target="_blank" class="cert-link">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="cert-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="cert-logo">
+                            <img src="data:image/png;base64,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" alt="Spring Logo" class="cert-logo-img">
+                        </div>
+                        <div class="cert-details">
+                            <h4>1H '25 Technology Execute & Deliver Award</h4>
+                            <p>S&P Global • 2025</p>
+                            <a href="https://badges.spglobal.com/46c98535-c359-41a0-bc52-68e616a3a76e#acc.QfRSsjqC" target="_blank" class="cert-link">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <!-- AWS Academy Cloud Security Foundations -->
+                    <div class="cert-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="cert-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo" class="cert-logo-img">
+                        </div>
+                        <div class="cert-details">
+                            <h4>AWS Academy Cloud Security Foundations</h4>
+                            <p>Amazon Web Services • 2023</p>
+                            <a href="https://www.credly.com/badges/b456b402-2bab-4416-a93c-dd9bdfc797b7/linked_in_profile" target="_blank" class="cert-link">
+                                <i class="fas fa-external-link-alt"></i> View Credential
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Red Hat Certified System Administrator -->
+                    <div class="cert-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="cert-logo">
+                            <img src="https://www.redhat.com/rhdc/managed-files/rhb-logos-red_hat_logo-hero_image_3.svg" alt="Red Hat Logo" class="cert-logo-img">
+                        </div>
+                        <div class="cert-details">
+                            <h4>Red Hat Certified System Administrator</h4>
+                            <p>Red Hat • 2022</p>
+                            <a href="https://www.credly.com/badges/9e526f16-697f-4345-9c3d-f62958666227/linked_in_profile" target="_blank" class="cert-link">
+                                <i class="fas fa-external-link-alt"></i> Verify Credential
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Spring Boot 3, Spring 6 & Hibernate -->
+                    <div class="cert-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="cert-logo">
+                            <img src="data:image/png;base64,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" alt="Spring Logo" class="cert-logo-img">
+                        </div>
+                        <div class="cert-details">
+                            <h4>Spring Boot 3, Spring 6 & Hibernate</h4>
+                            <p>Udemy • 2017</p>
+                            <a href="https://www.credly.com/badges/9e526f16-697f-4345-9c3d-f62958666227/linked_in_profile" target="_blank" class="cert-link">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Add more certifications from your LinkedIn profile here -->
+                    <!-- Template for additional certifications:
+                    <div class="cert-item" data-aos="fade-up" data-aos-delay="500">
+                        <div class="cert-logo">
+                            <img src="LOGO_URL_HERE" alt="Company Logo" class="cert-logo-img">
+                        </div>
+                        <div class="cert-details">
+                            <h4>CERTIFICATION_NAME_HERE</h4>
+                            <p>ISSUING_ORGANIZATION • YEAR</p>
+                            <a href="VERIFICATION_LINK_HERE" target="_blank" class="cert-link">
+                                <i class="fas fa-external-link-alt"></i> View Credential
+                            </a>
+                        </div>
+                    </div>
+                    -->
+                </div>
+                
+                <!-- Instructions for adding more certifications -->
+                <!-- <div class="cert-instructions" data-aos="fade-up" data-aos-delay="500">
+                    <div class="instructions-card">
+                        <h4><i class="fas fa-info-circle"></i> Add More Certifications</h4>
+                        <p>To add more certifications from your LinkedIn profile:</p>
+                        <ol>
+                            <li>Visit your <a href="https://www.linkedin.com/in/vinodseervi/details/certifications/" target="_blank">LinkedIn Certifications page</a></li>
+                            <li>Copy the certification details (name, issuer, date, verification link)</li>
+                            <li>Find the company logo (search for "[Company Name] logo" on Google Images)</li>
+                            <li>Use the template above to add each certification</li>
+                        </ol>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Section -->
+    <section id="travel" class="travel">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Travel Adventures</h2>
+                <p class="section-subtitle">Exploring the beauty of Rajasthan</p>
+            </div>
+            
+            <div class="travel-grid">
+                <div class="travel-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="travel-image">
+                        <img src="./box/jaipur.jpg" alt="Jaipur - Pink City">
+                        <div class="travel-overlay">
+                            <h3>Jaipur</h3>
+                            <p>Pink City</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="travel-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="travel-image">
+                        <img src="./box/jodhpur.jpg" alt="Jodhpur - Blue City">
+                        <div class="travel-overlay">
+                            <h3>Jodhpur</h3>
+                            <p>Blue City</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="travel-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="travel-image">
+                        <img src="./box/udiapur.jpg" alt="Udaipur - Lake City">
+                        <div class="travel-overlay">
+                            <h3>Udaipur</h3>
+                            <p>Lake City</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="travel-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="travel-image">
+                        <img src="./box/jaisalmer.jpg" alt="Jaisalmer - Golden City">
+                        <div class="travel-overlay">
+                            <h3>Jaisalmer</h3>
+                            <p>Golden City</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="travel-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="travel-image">
+                        <img src="./box/mount abu.jpg" alt="Mount Abu">
+                        <div class="travel-overlay">
+                            <h3>Mount Abu</h3>
+                            <p>Hill Station</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="travel-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="travel-image">
+                        <img src="./box/pali.jpg" alt="Ranakpur">
+                        <div class="travel-overlay">
+                            <h3>Ranakpur</h3>
+                            <p>Jain Temples</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="travel-cta" data-aos="fade-up" data-aos-delay="700">
+                <a href="./box/box.html" class="btn btn-secondary">
+                    <span>View Full Gallery</span>
+                    <i class="fas fa-images"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="800">
+                    <div class="contact-card">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always interested in new opportunities and exciting projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>vinodseervi0124@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Jodhpur, Rajasthan, India</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-briefcase"></i>
+                                <div>
+                                    <h4>Current Role</h4>
+                                    <p>SDE 1 at S&P Global</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/vinodseervi/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/vinodseervi" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/_vinodseervi/" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/vinod.seervi.94402/" target="_blank" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCuMvYdNLUhJSVxDIF-CXkgw" target="_blank" class="social-link">
+                                <i class="fab fa-youtube"></i>
         </a>
     </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left" data-aos-duration="800">
+                    <form action="https://formsubmit.co/vinodseervi0124@gmail.com" method="POST" class="form">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-input" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" name="subject" class="form-input" placeholder="Subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea name="message" class="form-input form-textarea" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Vinod Seervi. All rights reserved.</p>
+                    <p>Built with ❤️ and modern web technologies</p>
      </div>
     
-    <footer>
-        <div class="center">
-            copyright &copy; WWW.Vinod seervi.com. All rights reserved!
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
         </div>
     </footer>
     
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/modern-script.js"></script>
 </body>
 </html>
